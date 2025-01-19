@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Title</title>
+    <script defer src="oef 1.9.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .resultaat {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Uitgebreide Rekenmachine</h1>
+    <p>Voer twee getallen in (geheel of gebroken):</p>
+        <input type="number" id="getal1" placeholder="Getal 1" step="any">
+        <input type="number" id="getal2" placeholder="Getal 2" step="any">
+<br>
+<button onclick="bereken()">Bereken</button>
+
+<div class="resultaat" id="resultaat"></div>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+JS gebruikt voor : Formuliervalidatie
+                   Single-page-applicatie
+                   Ajax-webapplicaties
+                   Aanpassingen aan de opmaak
+                   Aanpassingen aan de inhoud
+                   Animaties
+
+defer : De webbrowser moet niet wachten op het script. De webbrowser mag de HTML-pagina al
+        verwerken. Het script laadt in de achtergrond en wordt uitgevoerd zodra de HTML-pagina
+        verwerkt is. Defer zorgt ervoor dat, ongeacht de locatie van het script, er geen blokkade is.
+
+Async : Het script wordt asynchroon (tegelijkertijd) met de HTML-pagina gedownload en uitgevoerd.
+        Het ‘async’ attribuut maakt het script volledig onafhankelijk. Het script wacht niet op
+        eventuele andere scripts of op de HTML-pagina. Het script start wanneer het is ingeladen.
+
+Via (""); : zorgt ervoor dat het in een alert-venster komt.
+
+via console.log (""); : De console.log() methode is ideaal om te debuggen. De data is niet meteen zichtbaar voor
+                     de bezoeker van de webpagina, maar is wel te raadplegen via de DevTools (tab ‘Console’).
+
+output 3 manieren : 1 in een alert box, via 'alert()'.
+
+                    2 in een browserconsole, via 'console.log()'.
+                    De console.log()-methode wordt vaak gebruikt om te debuggen.
+                    De data is niet meteen zichtbaar voor een bezoeker van een website, maar is
+                    wel zichtbaar in de DevTools (tab ‘Console’).
+
+                    3 in een HTML-element, via 'innerHTML'/'innerText'
+
+Iets in commentaar zetten: CNTRL + shift + /
+
+variabelen bv "let" : De waarde van een variabele kan doorheen de code gewijzigd worden, maar de
+                    identifier van de variabele blijft altijd hetzelfde!
+
+constanten "const" : Een constante is een variabele waarbij de waarde niet aangepast kan worden
+             na toekenning.
+
+primitieve gegevenstypes : • Getallen (numbers)
+                             let number = 13;
+                             let decimal = 3.14;
+                             let avagadro = 6.0221e23;
+
+                           • Tekenreeksen (strings)
+                           • Logische waarden (booleans)
+                           • Null
+                           • NaN (not a number)
+                           • Undefined
+
+complexe- of objecttypen : • Array
+                           • Function
+                           • Object
+
+tekenreeksen - strings : Strings zijn reeksen van tekens (ASCII-karakters).
+                         In JavaScript worden strings tussen enkele of dubbele aanhalingstekens
+                         geplaatst.
+                         let zin = “Deze zin is een string”;
+
+                         Via het gebruik van stringfuncties kunnen we informatie verkrijgen over een
+                         stringwaarde.
+                         • Enkele stringfuncties:
+                         • .length()
+                         • .charArt()
+                         • .substring()
+                         • .indexOf()
+
+Logische waarden – Booleaanse waarden : • Vergelijkingen, functies of lussen kunnen in JavaScript een booleaanse waarde
+                                        teruggeven.
+                                        • Een booleaanse waarde is waar (true) of onwaar (false).
+
+True of false…
+getal == 30; à True
+getal < 31; à True
+getal > 31; à False
+Getal == 31; à False
+
+Null
+• De waarde ‘Null’ staat letterlijk voor ‘niets’.
+• ‘Null’ is de waarde van een niet-gedeclareerde variabele.
+
+NaN
+• De waarde NaN staat voor ‘not a number’.
+• NaN krijgen we terug indien het programma een nummer had verwacht, maar
+deze niet heeft gekregen.
+
+Undefined
+• De waarde ‘undefined’ geeft aan dat een variabele nog niet geïnitialiseerd is of
+een functie niets retourneert.
+let getal;
+alert(getal);
+
+Wat zijn operatoren : Met operatoren kunnen we de variabelen in een script:
+                      • optellen
+                      • Aftrekken
+                      • Vergelijken
+                      • … en overige handelingen mee laten uitvoeren.
+
+Soorten operatoren : • Toewijzingsoperatoren (assignment operators)
+
+Het isgelijkteken (=) is een toewijzingsoperatoren en gebruiken we voor:
+• het toewijzen van waarden aan variabelen;
+• het wijzigen van waarden van variabelen.
+// Kent de waarde 1 toe aan variabele getal1
+getal1 = 1;
+
+                     • Wiskundige operatoren (arithmic operators)
+
++ Optellen
+- Aftrekken
+* Vermenigvuldigen
+/ Delen
+% Restwaarde berekenen
+++ Getal plus 1
+-- Getal min 1
+
+let uitkomst = 10 + 5;
+let uitkomst = 10 – 5;
+let uitkomst = 10 * 5;
+let uitkomst = 10 / 5;
+let uitkomst = 11 % 5;
+let uitkomst = 1;
+uitkomst++;
+let uitkomst = 6;
+uitkomst--;
+
+
+                     • Stringoperatoren (string operators)
+
+Het plusteken (+) is een concatenatieoperator. Met deze operator kunnen we
+twee of meer strings samenvoegen tot één string.
+let deel1 = “Dit is”
+let deel2 = “een zin”
+let uitkomst = deel1 + “ ” + deel2
+
+                     • Logische operatoren (logical operators)
+
+Met logische operatoren kunnen we nagaan of een expressie, bestaande uit
+logische waarden, waar (true) of onwaar (false) is.
+Operator Uitleg
+&& Logische ‘en’
+Deze operator geeft ‘true’ terug indien alle expressies ‘true’ zijn.
+Deze operator geeft ‘false’ terug indien één of alle expressies ‘false’ zijn.
+|| Logische ‘of’
+Deze operator geeft ‘true’ terug indien één of alle expressies ‘true’ zijn.
+Deze operator geeft ‘false’ terug indien alle expressies ‘false’ zijn.
+! Logische ‘niet’
+Deze operator geeft ‘true’ indien de expressie ‘false’ is.
+Deze operator geeft ‘false’ indien de expressie ‘true’ is.
+
+
+                     • Vergelijkingsoperatoren (comparison operators)
+
+Vergelijkingsoperatoren geven, net zoals logische operatoren, ‘true’ of ‘false’
+terug als resultaat, maar bij vergelijkingsoperatoren kunnen we ook met andere
+gegevenstypes werken.
+Operator Uitleg
+== Is gelijk aan
+=== Is strikt gelijk aan
+!= Is niet gelijk aan
+!== Is niet strikt gelijk aan
+< Is kleiner dan
+<= Is kleiner of gelijk aan
+> Is groter dan
+>= Is groter of gelijk aan
+
+
+                     • Speciale (overige) operatoren
+
+De typeof operator retourneert het gegevenstype van de variabele.
+let waarde = true;
+console.log(“Het gegevenstype is: “ + typeof waarde);
+
+• De voorwaardelijke operator (Engels: ternary operator) kunnen we gebruiken
+voor voorwaardelijke expressies. Dit type expressies werkt als volgt:
+• Is een voorwaardelijke expressie ‘waar’, dan worden de bijhorende
+statements achter het vraagteken uitgevoerd.
+• Is een voorwaardelijke expressie ‘onwaar’, dan worden de bijhorende
+statements achter de dubbelepunt uitgevoerd.
+
+let dag = “Maandag”;
+let uitspraak;
+uitspraak = (dag == “Zaterdag”) ? “Joepie, feest!” : “Geen feest”;
+console.log(uitspraak);
+
+controlestructeren : Controlestructuren zorgen ervoor dat er in een programma beslissingen worden
+                     genomen en berekeningen worden uitgevoerd.
+                     • If
+                     • If – else
+                     • Switch
+                     • While
+                     • Do... While
+                     • For
+
+If - else vb : • Deze controlestructuur laat toe om op basis van een voorwaarde of conditie een
+               beslissing te nemen.
+               • De voorwaarde staat tussen haakjes en maakt gebruik van een
+               vergelijkingsoperator. Ze geeft als resultaat een booleaanse waarde terug.
+               • Afhankelijk van het resultaat wordt één of meerdere statements uitgevoerd.
+               Deze statements moet je groepen met accolades.
+
+
+
+// Ben je jonger dan 12 jaar, dan krijgt het een Happy Meal.
+               // Ben je ouder dan 12 jaar, dan krijg je geen Happy Meal.
+               let leeftijd = 11;
+               if (leeftijd <= 12) {
+               console.log(“Je krijgt een Happy Meal.”);
+               }
+               else {
+               console.log(“Je krijgt geen Happy Meal.”);
+               }
+
+ if vb : Indien er niets moet gebeuren wanneer een voorwaarde ‘false’ is, kan je het
+         ‘else-gedeelte’ weglaten in je code. Dit gedeelte is niet verplicht.
+
+ // Indien je ouder bent dan 18, krijg je het label ‘+18’.
+         let leeftijd = 19;
+         if (leeftijd >= 18) {
+         console.log(“Je krijgt het label +18.”);
+         }
+
+Switch : • De switch-controlestructuur is een veralgemening van de if-else structuur.
+         • Deze laat toe om op een overzichtelijke manier verschillende mogelijke
+         beslissingen te evalueren.
+         • De switch-controlestructuur is veel leesbaarder en handelbaarder dan een
+         uitgebreide of geneste if-else controlestructuur.
+
+         let dag;
+         switch (new Date().getDay()) {
+         case 0:
+         dag = "zondag";
+         break;
+         case 1:
+         dag = "maandag";
+         break;
+         case 2:
+         dag = "dinsdag";
+         break;
+         case 3:
+         dag = "woensdag";
+         break;
+         case 4:
+         dag = "donderdag";
+         break;
+         case 5:
+         dag = "vrijdag";
+         break;
+         case 6:
+         dag = "zaterdag";
+         }
+         console.log(“Vandaag zijn we “ + dag + “.”);
+         // Ga na welke dag we
+         vandaag zijn en geef
+         de dag weer in de console.
+
+• We kunnen in onze switch-controlestructuur ook een ‘default’ toevoegen voor
+‘alle andere gevallen’.
+
+// Ga na of de bezoeker een koekje wenst en geef een antwoord terug.
+let koekje = prompt("Wil je een koekje", "Ja, Nee");
+let uitkomst;
+switch (koekje.toUpperCase()) {
+case "JA":
+uitkomst = "Joepie, hier is je koekje!";
+break;
+case "NEE":
+uitkomst = "Oké, hap dan maar wat lucht!";
+break;
+default:
+uitkomst = "Sorry, dat was geen duidelijk antwoord...";
+}
+document.getElementById(“antwoord”).innerHTML = uitkomst;
+
+While : • Met de While-controlestructuur kunnen we een lus maken.
+        • Zolang er aan een voorwaarde wordt voldaan, worden de bijhorende
+        statements uitgevoerd.
+
+// De lus loopt zolang de teller kleiner is dan 10.
+// Per keer verhoogt de teller met 1.
+let teller = 1;
+let uitkomst = “”;
+while (teller < 10) {
+uitkomst = uitkomst + “<br>De teller staat op “ + teller + “.”;
+teller++;
+}
+
+Do - While : • De do-while controlestructuur is een variant van de while-controlestructuur.
+             • Bij deze controlestructuur worden de statements minstens één keer uitgevoerd,
+             ook wanneer de voorwaarde onwaar is.
+
+// De lus loopt zolang de teller kleiner is dan 10.
+// Per keer verhoogt de teller met 1.
+let teller = 15;
+let uitkomst = “”;
+do {
+uitkomst = uitkomst + “<br>De teller staat op “ + teller + “.”;
+teller++;
+}
+while (teller < 10);
+console.log(uitkomst);
+
+For : • Met de for-controlestructuur kunnen we nog eenvoudiger werken met tellers.
+      • Deze controlestructuur is aangewezen wanneer we het aantal herhalingen op
+      voorhand kennen.
+
+// De lus loopt zolang de teller kleiner is dan 10.
+// Per keer verhoogt de teller met 1.
+let uitkomst = “”;
+for(teller = 0; teller < 10; teller++) {
+uitkomst = uitkomst + “<br>De teller staat op “ + teller + “.”;
+}
+console.log(uitkomst);
+
+
+
+

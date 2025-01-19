@@ -1,0 +1,17 @@
+Statement: instructie / een lijn code
+Gegevenstype: Het soort gegeven dat in een variabele steekt
+Declareren: een variabele aanmaken
+let: een variabele die nog kan veranderen van waarde
+const: een variabele die niet meer kan veranderen van waarde
+
+number: getallen
+string: tekst
+boolean: waar of onwaar / True or False
+Null: iets wat niet meer bestaat. De variabele waarnaar je verwijst is nergens gedeclareerd.
+undefined: De variabele waarnaar je verwijst staat wel ergens gedeclareerd maar heeft nog geen waarde gekregen.
+array: een lijst van gegevens
+object: wordt gebruikt om gegevens die samen horen te blijven groeperen
+
+minder belangrijk:
+camelcasing: variabelen beginnen met een kleine letter, dan een hoofdletter voor elk volgend woord.
+kebab-casing: alles kleine letters, gescheiden door een "-"
